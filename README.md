@@ -15,6 +15,9 @@ NuGet package: [Platform.Scopes](https://www.nuget.org/packages/Platform.Scopes)
 ## [Documentation](https://linksplatform.github.io/Scopes)
 [PDF file](https://linksplatform.github.io/Scopes/Platform.Scopes.pdf) with code for e-readers.
 
+## Depend on
+* [Platform.Singletons](https://github.com/linksplatform/Singletons)
+
 ## Mystery files
 * [.travis.yml](https://github.com/linksplatform/Scopes/blob/master/.travis.yml) - Travis CI build configuration.
 * [docfx.json](https://github.com/linksplatform/Scopes/blob/master/docfx.json) and [toc.yml](https://github.com/linksplatform/Scopes/blob/master/toc.yml) - DocFX build configuration.
