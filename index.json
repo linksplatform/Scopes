@@ -1,18 +1,18 @@
 {
+  "api/Platform.Scopes.html": {
+    "href": "api/Platform.Scopes.html",
+    "title": "Namespace Platform.Scopes | LinksPlatform's Platform.Scopes Library",
+    "keywords": "Namespace Platform.Scopes Classes Scope Scope<TInclude> Use<T>"
+  },
   "README.html": {
     "href": "README.html",
     "title": "Scopes | LinksPlatform's Platform.Scopes Library",
-    "keywords": "Scopes LinksPlatform's Platform.Scopes Class Library. Namespace: Platform.Scopes Forked from: LinksPlatform/Helpers/Scopes NuGet package: Platform.Scopes Documentation PDF file with code for e-readers. Mystery files .travis.yml - Travis CI build configuration. docfx.json and toc.yml - DocFX build configuration. format-document.sh - script for formating tex file for generating PDF from it. format-csharp-files.py - script for formating single .cs file as a part of tex file. generate-pdf.sh - script that generates PDF with code for e-readers. publish-docs.sh - script that publishes generated documentation and PDF with code for e-readers to gh-pages branch. push-nuget.bat - Windows script for publishing current version of NuGet package."
+    "keywords": "Scopes LinksPlatform's Platform.Scopes Class Library. Namespace: Platform.Scopes Forked from: LinksPlatform/Helpers/Scopes NuGet package: Platform.Scopes Documentation PDF file with code for e-readers. Depend on Platform.Singletons Mystery files .travis.yml - Travis CI build configuration. docfx.json and toc.yml - DocFX build configuration. format-document.sh - script for formating tex file for generating PDF from it. format-csharp-files.py - script for formating single .cs file as a part of tex file. generate-pdf.sh - script that generates PDF with code for e-readers. publish-docs.sh - script that publishes generated documentation and PDF with code for e-readers to gh-pages branch. push-nuget.bat - Windows script for publishing current version of NuGet package."
   },
   "api/Platform.Scopes.Use-1.html": {
     "href": "api/Platform.Scopes.Use-1.html",
     "title": "Class Use<T> | LinksPlatform's Platform.Scopes Library",
     "keywords": "Class Use<T> Inheritance Object Use<T> Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Scopes Assembly : Platform.Scopes.dll Syntax public static class Use<T> Type Parameters Name Description T Properties | Improve this Doc View Source New Declaration public static Disposable<T> New { get; } Property Value Type Description Platform.Disposables.Disposable <T> | Improve this Doc View Source Single Declaration public static T Single { get; } Property Value Type Description T"
-  },
-  "api/Platform.Scopes.html": {
-    "href": "api/Platform.Scopes.html",
-    "title": "Namespace Platform.Scopes | LinksPlatform's Platform.Scopes Library",
-    "keywords": "Namespace Platform.Scopes Classes Scope Scope<TInclude> Use<T>"
   },
   "api/Platform.Scopes.Scope-1.html": {
     "href": "api/Platform.Scopes.Scope-1.html",
