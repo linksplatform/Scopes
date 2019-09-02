@@ -6,7 +6,8 @@
     <AssemblyTitle>Platform.Scopes</AssemblyTitle>
     <VersionPrefix>0.0.2</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netstandard2.0;net461</TargetFrameworks>
+    <TargetFramework Condition="'$(OS)' != 'Windows_NT'">netcoreapp2.0</TargetFramework>
     <AssemblyName>Platform.Scopes</AssemblyName>
     <PackageId>Platform.Scopes</PackageId>
     <PackageTags>LinksPlatform;Scopes;Scope;Use</PackageTags>
