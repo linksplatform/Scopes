@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Scopes Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Scopes</AssemblyTitle>
-    <VersionPrefix>0.0.2</VersionPrefix>
+    <VersionPrefix>0.0.3</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netstandard2.0;net461</TargetFrameworks>
     <TargetFramework Condition="'$(OS)' != 'Windows_NT'">netcoreapp2.0</TargetFramework>
@@ -22,7 +22,9 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageReleaseNotes>Platform.Singletons dependency updated from 0.0.1 to 0.0.2.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added support for net461 (.NET Framework 4.6.1).
+Platform.Singletons dependency updated from 0.0.2 to 0.0.3.
+Issues fix.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
