@@ -28,7 +28,7 @@ Issues fix.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Platform.Singletons" Version="0.0.3" />
+    <PackageReference Include="Platform.Singletons" Version="0.0.4" />
   </ItemGroup>
 
 </Project>
