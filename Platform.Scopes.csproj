@@ -4,7 +4,7 @@
     <Description>LinksPlatform's Platform.Scopes Class Library</Description>
     <Copyright>Konstantin Diachenko</Copyright>
     <AssemblyTitle>Platform.Scopes</AssemblyTitle>
-    <VersionPrefix>0.0.3</VersionPrefix>
+    <VersionPrefix>0.0.4</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <AssemblyName>Platform.Scopes</AssemblyName>
@@ -22,9 +22,9 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>Latest</LangVersion>
-    <PackageReleaseNotes>Added support for net461 (.NET Framework 4.6.1).
-Platform.Singletons dependency updated from 0.0.2 to 0.0.3.
-Issues fix.</PackageReleaseNotes>
+    <PackageReleaseNotes>Platform.Singletons dependency updated from 0.0.3 to 0.0.4.
+Travis CI build configuration updated to support automatic NuGet package publishing.
+Project file updated to support multiple build environments: dotnet, Travis CI, MonoDevelop, and Visual Studio.</PackageReleaseNotes>
   </PropertyGroup>
   
   <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
