@@ -6,8 +6,7 @@
     <AssemblyTitle>Platform.Scopes</AssemblyTitle>
     <VersionPrefix>0.0.3</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">netstandard2.0;net461</TargetFrameworks>
-    <TargetFramework Condition="'$(OS)' != 'Windows_NT'">netcoreapp2.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <AssemblyName>Platform.Scopes</AssemblyName>
     <PackageId>Platform.Scopes</PackageId>
     <PackageTags>LinksPlatform;Scopes;Scope;Use</PackageTags>
@@ -22,11 +21,16 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <LangVersion>Latest</LangVersion>
     <PackageReleaseNotes>Added support for net461 (.NET Framework 4.6.1).
 Platform.Singletons dependency updated from 0.0.2 to 0.0.3.
 Issues fix.</PackageReleaseNotes>
   </PropertyGroup>
-
+  
+  <ItemGroup Condition="$(TargetFramework.StartsWith('net4')) AND '$(MSBuildRuntimeType)' == 'Core' AND '$(OS)' != 'Windows_NT'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0-preview.2" PrivateAssets="All" />      
+  </ItemGroup>
+  
   <ItemGroup>
     <PackageReference Include="Platform.Singletons" Version="0.0.4" />
   </ItemGroup>
