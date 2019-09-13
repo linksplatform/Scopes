@@ -88,14 +88,62 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">Scope</span></div>
-      <div class="level2"><a class="xref" href="Platform.Scopes.Scope-1.html">Scope&lt;TInclude&gt;</a></div>
+    <div class="level1"><span class="xref">Platform.Disposables.DisposableBase</span></div>
+    <div class="level2"><span class="xref">Scope</span></div>
+      <div class="level3"><a class="xref" href="Platform.Scopes.Scope-1.html">Scope&lt;TInclude&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Platform.Disposables.IDisposable</span></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Platform.Disposables.DisposableBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Platform.Disposables.DisposableBase.Destruct()</span>
+    </div>
+    <div>
+      <span class="xref">Platform.Disposables.DisposableBase.IsDisposed</span>
+    </div>
+    <div>
+      <span class="xref">Platform.Disposables.DisposableBase.ObjectName</span>
+    </div>
+    <div>
+      <span class="xref">Platform.Disposables.DisposableBase.AllowMultipleDisposeAttempts</span>
+    </div>
+    <div>
+      <span class="xref">Platform.Disposables.DisposableBase.AllowMultipleDisposeCalls</span>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Platform.Scopes.html">Platform.Scopes</a></h6>
   <h6><strong>Assembly</strong>: Platform.Scopes.dll</h6>
   <h5 id="Platform_Scopes_Scope_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Scope : DisposableBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class Scope : DisposableBase, IDisposable, IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -104,7 +152,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope__ctor.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L36">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L36">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope__ctor_" data-uid="Platform.Scopes.Scope.#ctor*"></a>
   <h4 id="Platform_Scopes_Scope__ctor" data-uid="Platform.Scopes.Scope.#ctor">Scope()</h4>
@@ -119,7 +167,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope__ctor_System_Boolean_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.%23ctor(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L34">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L34">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope__ctor_" data-uid="Platform.Scopes.Scope.#ctor*"></a>
   <h4 id="Platform_Scopes_Scope__ctor_System_Boolean_" data-uid="Platform.Scopes.Scope.#ctor(System.Boolean)">Scope(Boolean)</h4>
@@ -151,7 +199,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope__ctor_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.%23ctor(System.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L28">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L28">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope__ctor_" data-uid="Platform.Scopes.Scope.#ctor*"></a>
   <h4 id="Platform_Scopes_Scope__ctor_System_Boolean_System_Boolean_" data-uid="Platform.Scopes.Scope.#ctor(System.Boolean,System.Boolean)">Scope(Boolean, Boolean)</h4>
@@ -190,7 +238,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_Global.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.Global%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L18">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L18">View Source</a>
   </span>
   <h4 id="Platform_Scopes_Scope_Global" data-uid="Platform.Scopes.Scope.Global">Global</h4>
   <div class="markdown level1 summary"></div>
@@ -221,7 +269,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_Dispose_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.Dispose(System.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L289">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L289">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_Dispose_" data-uid="Platform.Scopes.Scope.Dispose*"></a>
   <h4 id="Platform_Scopes_Scope_Dispose_System_Boolean_System_Boolean_" data-uid="Platform.Scopes.Scope.Dispose(System.Boolean,System.Boolean)">Dispose(Boolean, Boolean)</h4>
@@ -253,12 +301,14 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Platform.Disposables.DisposableBase.Dispose(System.Boolean, System.Boolean)</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_Exclude_System_Object_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.Exclude(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L48">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L48">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_Exclude_" data-uid="Platform.Scopes.Scope.Exclude*"></a>
   <h4 id="Platform_Scopes_Scope_Exclude_System_Object_" data-uid="Platform.Scopes.Scope.Exclude(System.Object)">Exclude(Object)</h4>
@@ -290,7 +340,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_Exclude__1.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.Exclude%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L46">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L46">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_Exclude_" data-uid="Platform.Scopes.Scope.Exclude*"></a>
   <h4 id="Platform_Scopes_Scope_Exclude__1" data-uid="Platform.Scopes.Scope.Exclude``1">Exclude&lt;T&gt;()</h4>
@@ -317,13 +367,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_ExcludeAssembly_Assembly_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.ExcludeAssembly(Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_ExcludeAssembly_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.ExcludeAssembly(System.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L44">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L44">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_ExcludeAssembly_" data-uid="Platform.Scopes.Scope.ExcludeAssembly*"></a>
-  <h4 id="Platform_Scopes_Scope_ExcludeAssembly_Assembly_" data-uid="Platform.Scopes.Scope.ExcludeAssembly(Assembly)">ExcludeAssembly(Assembly)</h4>
+  <h4 id="Platform_Scopes_Scope_ExcludeAssembly_System_Reflection_Assembly_" data-uid="Platform.Scopes.Scope.ExcludeAssembly(System.Reflection.Assembly)">ExcludeAssembly(Assembly)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -341,7 +391,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Assembly</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
         <td><span class="parametername">assembly</span></td>
         <td></td>
       </tr>
@@ -352,7 +402,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_ExcludeAssemblyOf__1.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.ExcludeAssemblyOf%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L40">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L40">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_ExcludeAssemblyOf_" data-uid="Platform.Scopes.Scope.ExcludeAssemblyOf*"></a>
   <h4 id="Platform_Scopes_Scope_ExcludeAssemblyOf__1" data-uid="Platform.Scopes.Scope.ExcludeAssemblyOf``1">ExcludeAssemblyOf&lt;T&gt;()</h4>
@@ -379,13 +429,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_ExcludeAssemblyOfType_Type_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.ExcludeAssemblyOfType(Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_ExcludeAssemblyOfType_System_Type_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.ExcludeAssemblyOfType(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L42">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L42">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_ExcludeAssemblyOfType_" data-uid="Platform.Scopes.Scope.ExcludeAssemblyOfType*"></a>
-  <h4 id="Platform_Scopes_Scope_ExcludeAssemblyOfType_Type_" data-uid="Platform.Scopes.Scope.ExcludeAssemblyOfType(Type)">ExcludeAssemblyOfType(Type)</h4>
+  <h4 id="Platform_Scopes_Scope_ExcludeAssemblyOfType_System_Type_" data-uid="Platform.Scopes.Scope.ExcludeAssemblyOfType(System.Type)">ExcludeAssemblyOfType(Type)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -403,7 +453,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
         <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
@@ -414,7 +464,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_Include_System_Object_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.Include(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L73">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L73">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_Include_" data-uid="Platform.Scopes.Scope.Include*"></a>
   <h4 id="Platform_Scopes_Scope_Include_System_Object_" data-uid="Platform.Scopes.Scope.Include(System.Object)">Include(Object)</h4>
@@ -446,7 +496,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_Include__1.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.Include%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L60">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L60">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_Include_" data-uid="Platform.Scopes.Scope.Include*"></a>
   <h4 id="Platform_Scopes_Scope_Include__1" data-uid="Platform.Scopes.Scope.Include``1">Include&lt;T&gt;()</h4>
@@ -473,13 +523,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_IncludeAssembly_Assembly_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.IncludeAssembly(Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_IncludeAssembly_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.IncludeAssembly(System.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L58">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L58">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_IncludeAssembly_" data-uid="Platform.Scopes.Scope.IncludeAssembly*"></a>
-  <h4 id="Platform_Scopes_Scope_IncludeAssembly_Assembly_" data-uid="Platform.Scopes.Scope.IncludeAssembly(Assembly)">IncludeAssembly(Assembly)</h4>
+  <h4 id="Platform_Scopes_Scope_IncludeAssembly_System_Reflection_Assembly_" data-uid="Platform.Scopes.Scope.IncludeAssembly(System.Reflection.Assembly)">IncludeAssembly(Assembly)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -497,7 +547,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Assembly</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></td>
         <td><span class="parametername">assembly</span></td>
         <td></td>
       </tr>
@@ -508,7 +558,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_IncludeAssemblyOf__1.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.IncludeAssemblyOf%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L54">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L54">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_IncludeAssemblyOf_" data-uid="Platform.Scopes.Scope.IncludeAssemblyOf*"></a>
   <h4 id="Platform_Scopes_Scope_IncludeAssemblyOf__1" data-uid="Platform.Scopes.Scope.IncludeAssemblyOf``1">IncludeAssemblyOf&lt;T&gt;()</h4>
@@ -535,13 +585,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_IncludeAssemblyOfType_Type_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.IncludeAssemblyOfType(Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_IncludeAssemblyOfType_System_Type_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.IncludeAssemblyOfType(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L56">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L56">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_IncludeAssemblyOfType_" data-uid="Platform.Scopes.Scope.IncludeAssemblyOfType*"></a>
-  <h4 id="Platform_Scopes_Scope_IncludeAssemblyOfType_Type_" data-uid="Platform.Scopes.Scope.IncludeAssemblyOfType(Type)">IncludeAssemblyOfType(Type)</h4>
+  <h4 id="Platform_Scopes_Scope_IncludeAssemblyOfType_System_Type_" data-uid="Platform.Scopes.Scope.IncludeAssemblyOfType(System.Type)">IncludeAssemblyOfType(Type)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -559,7 +609,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
         <td><span class="parametername">type</span></td>
         <td></td>
       </tr>
@@ -567,13 +617,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_SortConstructors_List_ConstructorInfo__.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.SortConstructors(List%7BConstructorInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_SortConstructors_System_Collections_Generic_List_System_Reflection_ConstructorInfo__.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.SortConstructors(System.Collections.Generic.List%7BSystem.Reflection.ConstructorInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L226">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L226">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_SortConstructors_" data-uid="Platform.Scopes.Scope.SortConstructors*"></a>
-  <h4 id="Platform_Scopes_Scope_SortConstructors_List_ConstructorInfo__" data-uid="Platform.Scopes.Scope.SortConstructors(List{ConstructorInfo})">SortConstructors(List&lt;ConstructorInfo&gt;)</h4>
+  <h4 id="Platform_Scopes_Scope_SortConstructors_System_Collections_Generic_List_System_Reflection_ConstructorInfo__" data-uid="Platform.Scopes.Scope.SortConstructors(System.Collections.Generic.List{System.Reflection.ConstructorInfo})">SortConstructors(List&lt;ConstructorInfo&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -591,7 +641,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">ConstructorInfo</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.constructorinfo">ConstructorInfo</a>&gt;</td>
         <td><span class="parametername">resultConstructors</span></td>
         <td></td>
       </tr>
@@ -599,13 +649,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_TryResolve_Type_System_Object__.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.TryResolve(Type%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_TryResolve_System_Type_System_Object__.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.TryResolve(System.Type%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L152">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L152">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_TryResolve_" data-uid="Platform.Scopes.Scope.TryResolve*"></a>
-  <h4 id="Platform_Scopes_Scope_TryResolve_Type_System_Object__" data-uid="Platform.Scopes.Scope.TryResolve(Type,System.Object@)">TryResolve(Type, out Object)</h4>
+  <h4 id="Platform_Scopes_Scope_TryResolve_System_Type_System_Object__" data-uid="Platform.Scopes.Scope.TryResolve(System.Type,System.Object@)">TryResolve(Type, out Object)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -623,7 +673,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
         <td><span class="parametername">requiredType</span></td>
         <td></td>
       </tr>
@@ -654,7 +704,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_TryResolve__1___0__.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.TryResolve%60%601(%60%600%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L141">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L141">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_TryResolve_" data-uid="Platform.Scopes.Scope.TryResolve*"></a>
   <h4 id="Platform_Scopes_Scope_TryResolve__1___0__" data-uid="Platform.Scopes.Scope.TryResolve``1(``0@)">TryResolve&lt;T&gt;(out T)</h4>
@@ -713,13 +763,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_TryResolveInstance_List_ConstructorInfo__System_Object__.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.TryResolveInstance(List%7BConstructorInfo%7D%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_TryResolveInstance_System_Collections_Generic_List_System_Reflection_ConstructorInfo__System_Object__.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.TryResolveInstance(System.Collections.Generic.List%7BSystem.Reflection.ConstructorInfo%7D%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L228">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L228">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_TryResolveInstance_" data-uid="Platform.Scopes.Scope.TryResolveInstance*"></a>
-  <h4 id="Platform_Scopes_Scope_TryResolveInstance_List_ConstructorInfo__System_Object__" data-uid="Platform.Scopes.Scope.TryResolveInstance(List{ConstructorInfo},System.Object@)">TryResolveInstance(List&lt;ConstructorInfo&gt;, out Object)</h4>
+  <h4 id="Platform_Scopes_Scope_TryResolveInstance_System_Collections_Generic_List_System_Reflection_ConstructorInfo__System_Object__" data-uid="Platform.Scopes.Scope.TryResolveInstance(System.Collections.Generic.List{System.Reflection.ConstructorInfo},System.Object@)">TryResolveInstance(List&lt;ConstructorInfo&gt;, out Object)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -737,7 +787,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">ConstructorInfo</span>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.constructorinfo">ConstructorInfo</a>&gt;</td>
         <td><span class="parametername">constructors</span></td>
         <td></td>
       </tr>
@@ -768,7 +818,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_Use_System_Object_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.Use(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L131">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L131">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_Use_" data-uid="Platform.Scopes.Scope.Use*"></a>
   <h4 id="Platform_Scopes_Scope_Use_System_Object_" data-uid="Platform.Scopes.Scope.Use(System.Object)">Use(Object)</h4>
@@ -800,7 +850,7 @@
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_Use__1.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.Use%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L99">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L99">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_Use_" data-uid="Platform.Scopes.Scope.Use*"></a>
   <h4 id="Platform_Scopes_Scope_Use__1" data-uid="Platform.Scopes.Scope.Use``1">Use&lt;T&gt;()</h4>
@@ -850,7 +900,7 @@ TODO: Add support for factories</p>
     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_UseAndReturn__1___0_.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.UseAndReturn%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L125">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L125">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_UseAndReturn_" data-uid="Platform.Scopes.Scope.UseAndReturn*"></a>
   <h4 id="Platform_Scopes_Scope_UseAndReturn__1___0_" data-uid="Platform.Scopes.Scope.UseAndReturn``1(``0)">UseAndReturn&lt;T&gt;(T)</h4>
@@ -909,18 +959,18 @@ TODO: Add support for factories</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_UseSingleton__1_Func___0__.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.UseSingleton%60%601(Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_UseSingleton__1_Platform_Interfaces_IFactory___0__.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.UseSingleton%60%601(Platform.Interfaces.IFactory%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L123">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L121">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_UseSingleton_" data-uid="Platform.Scopes.Scope.UseSingleton*"></a>
-  <h4 id="Platform_Scopes_Scope_UseSingleton__1_Func___0__" data-uid="Platform.Scopes.Scope.UseSingleton``1(Func{``0})">UseSingleton&lt;T&gt;(Func&lt;T&gt;)</h4>
+  <h4 id="Platform_Scopes_Scope_UseSingleton__1_Platform_Interfaces_IFactory___0__" data-uid="Platform.Scopes.Scope.UseSingleton``1(Platform.Interfaces.IFactory{``0})">UseSingleton&lt;T&gt;(IFactory&lt;T&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T UseSingleton&lt;T&gt;(Func&lt;T&gt; creator)</code></pre>
+    <pre><code class="lang-csharp hljs">public T UseSingleton&lt;T&gt;(IFactory&lt;T&gt; factory)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -933,8 +983,8 @@ TODO: Add support for factories</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Func</span>&lt;T&gt;</td>
-        <td><span class="parametername">creator</span></td>
+        <td><span class="xref">Platform.Interfaces.IFactory</span>&lt;T&gt;</td>
+        <td><span class="parametername">factory</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -971,18 +1021,18 @@ TODO: Add support for factories</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_UseSingleton__1_IFactory___0__.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.UseSingleton%60%601(IFactory%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope_UseSingleton__1_System_Func___0__.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope.UseSingleton%60%601(System.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L121">View Source</a>
+    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L123">View Source</a>
   </span>
   <a id="Platform_Scopes_Scope_UseSingleton_" data-uid="Platform.Scopes.Scope.UseSingleton*"></a>
-  <h4 id="Platform_Scopes_Scope_UseSingleton__1_IFactory___0__" data-uid="Platform.Scopes.Scope.UseSingleton``1(IFactory{``0})">UseSingleton&lt;T&gt;(IFactory&lt;T&gt;)</h4>
+  <h4 id="Platform_Scopes_Scope_UseSingleton__1_System_Func___0__" data-uid="Platform.Scopes.Scope.UseSingleton``1(System.Func{``0})">UseSingleton&lt;T&gt;(Func&lt;T&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T UseSingleton&lt;T&gt;(IFactory&lt;T&gt; factory)</code></pre>
+    <pre><code class="lang-csharp hljs">public T UseSingleton&lt;T&gt;(Func&lt;T&gt; creator)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -995,8 +1045,8 @@ TODO: Add support for factories</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IFactory</span>&lt;T&gt;</td>
-        <td><span class="parametername">factory</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</td>
+        <td><span class="parametername">creator</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1031,6 +1081,13 @@ TODO: Add support for factories</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Platform.Disposables.IDisposable</span>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
 </article>
           </div>
           
@@ -1042,7 +1099,7 @@ TODO: Add support for factories</p>
                     <a href="https://github.com/linksplatform/Scopes/new/master/apiSpec/new?filename=Platform_Scopes_Scope.md&amp;value=---%0Auid%3A%20Platform.Scopes.Scope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/linksplatform/Scopes/blob/fc091fa32c736fb7208d1c1deb82f75d5003184b/Scope.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/linksplatform/Scopes/blob/d95bf23116e9476fd63f4c885f6885707c684ccd/Scope.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

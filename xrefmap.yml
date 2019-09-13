@@ -73,11 +73,11 @@ references:
   fullName.vb: Platform.Scopes.Scope.Exclude(Of T)()
   nameWithType: Scope.Exclude<T>()
   nameWithType.vb: Scope.Exclude(Of T)()
-- uid: Platform.Scopes.Scope.ExcludeAssembly(Assembly)
+- uid: Platform.Scopes.Scope.ExcludeAssembly(System.Reflection.Assembly)
   name: ExcludeAssembly(Assembly)
-  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_ExcludeAssembly_Assembly_
-  commentId: M:Platform.Scopes.Scope.ExcludeAssembly(Assembly)
-  fullName: Platform.Scopes.Scope.ExcludeAssembly(Assembly)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_ExcludeAssembly_System_Reflection_Assembly_
+  commentId: M:Platform.Scopes.Scope.ExcludeAssembly(System.Reflection.Assembly)
+  fullName: Platform.Scopes.Scope.ExcludeAssembly(System.Reflection.Assembly)
   nameWithType: Scope.ExcludeAssembly(Assembly)
 - uid: Platform.Scopes.Scope.ExcludeAssembly*
   name: ExcludeAssembly
@@ -102,11 +102,11 @@ references:
   fullName.vb: Platform.Scopes.Scope.ExcludeAssemblyOf(Of T)()
   nameWithType: Scope.ExcludeAssemblyOf<T>()
   nameWithType.vb: Scope.ExcludeAssemblyOf(Of T)()
-- uid: Platform.Scopes.Scope.ExcludeAssemblyOfType(Type)
+- uid: Platform.Scopes.Scope.ExcludeAssemblyOfType(System.Type)
   name: ExcludeAssemblyOfType(Type)
-  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_ExcludeAssemblyOfType_Type_
-  commentId: M:Platform.Scopes.Scope.ExcludeAssemblyOfType(Type)
-  fullName: Platform.Scopes.Scope.ExcludeAssemblyOfType(Type)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_ExcludeAssemblyOfType_System_Type_
+  commentId: M:Platform.Scopes.Scope.ExcludeAssemblyOfType(System.Type)
+  fullName: Platform.Scopes.Scope.ExcludeAssemblyOfType(System.Type)
   nameWithType: Scope.ExcludeAssemblyOfType(Type)
 - uid: Platform.Scopes.Scope.ExcludeAssemblyOfType*
   name: ExcludeAssemblyOfType
@@ -143,11 +143,11 @@ references:
   fullName.vb: Platform.Scopes.Scope.Include(Of T)()
   nameWithType: Scope.Include<T>()
   nameWithType.vb: Scope.Include(Of T)()
-- uid: Platform.Scopes.Scope.IncludeAssembly(Assembly)
+- uid: Platform.Scopes.Scope.IncludeAssembly(System.Reflection.Assembly)
   name: IncludeAssembly(Assembly)
-  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_IncludeAssembly_Assembly_
-  commentId: M:Platform.Scopes.Scope.IncludeAssembly(Assembly)
-  fullName: Platform.Scopes.Scope.IncludeAssembly(Assembly)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_IncludeAssembly_System_Reflection_Assembly_
+  commentId: M:Platform.Scopes.Scope.IncludeAssembly(System.Reflection.Assembly)
+  fullName: Platform.Scopes.Scope.IncludeAssembly(System.Reflection.Assembly)
   nameWithType: Scope.IncludeAssembly(Assembly)
 - uid: Platform.Scopes.Scope.IncludeAssembly*
   name: IncludeAssembly
@@ -172,11 +172,11 @@ references:
   fullName.vb: Platform.Scopes.Scope.IncludeAssemblyOf(Of T)()
   nameWithType: Scope.IncludeAssemblyOf<T>()
   nameWithType.vb: Scope.IncludeAssemblyOf(Of T)()
-- uid: Platform.Scopes.Scope.IncludeAssemblyOfType(Type)
+- uid: Platform.Scopes.Scope.IncludeAssemblyOfType(System.Type)
   name: IncludeAssemblyOfType(Type)
-  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_IncludeAssemblyOfType_Type_
-  commentId: M:Platform.Scopes.Scope.IncludeAssemblyOfType(Type)
-  fullName: Platform.Scopes.Scope.IncludeAssemblyOfType(Type)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_IncludeAssemblyOfType_System_Type_
+  commentId: M:Platform.Scopes.Scope.IncludeAssemblyOfType(System.Type)
+  fullName: Platform.Scopes.Scope.IncludeAssemblyOfType(System.Type)
   nameWithType: Scope.IncludeAssemblyOfType(Type)
 - uid: Platform.Scopes.Scope.IncludeAssemblyOfType*
   name: IncludeAssemblyOfType
@@ -185,13 +185,13 @@ references:
   isSpec: "True"
   fullName: Platform.Scopes.Scope.IncludeAssemblyOfType
   nameWithType: Scope.IncludeAssemblyOfType
-- uid: Platform.Scopes.Scope.SortConstructors(List{ConstructorInfo})
+- uid: Platform.Scopes.Scope.SortConstructors(System.Collections.Generic.List{System.Reflection.ConstructorInfo})
   name: SortConstructors(List<ConstructorInfo>)
-  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_SortConstructors_List_ConstructorInfo__
-  commentId: M:Platform.Scopes.Scope.SortConstructors(List{ConstructorInfo})
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_SortConstructors_System_Collections_Generic_List_System_Reflection_ConstructorInfo__
+  commentId: M:Platform.Scopes.Scope.SortConstructors(System.Collections.Generic.List{System.Reflection.ConstructorInfo})
   name.vb: SortConstructors(List(Of ConstructorInfo))
-  fullName: Platform.Scopes.Scope.SortConstructors(List<ConstructorInfo>)
-  fullName.vb: Platform.Scopes.Scope.SortConstructors(List(Of ConstructorInfo))
+  fullName: Platform.Scopes.Scope.SortConstructors(System.Collections.Generic.List<System.Reflection.ConstructorInfo>)
+  fullName.vb: Platform.Scopes.Scope.SortConstructors(System.Collections.Generic.List(Of System.Reflection.ConstructorInfo))
   nameWithType: Scope.SortConstructors(List<ConstructorInfo>)
   nameWithType.vb: Scope.SortConstructors(List(Of ConstructorInfo))
 - uid: Platform.Scopes.Scope.SortConstructors*
@@ -201,13 +201,13 @@ references:
   isSpec: "True"
   fullName: Platform.Scopes.Scope.SortConstructors
   nameWithType: Scope.SortConstructors
-- uid: Platform.Scopes.Scope.TryResolve(Type,System.Object@)
+- uid: Platform.Scopes.Scope.TryResolve(System.Type,System.Object@)
   name: TryResolve(Type, out Object)
-  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_TryResolve_Type_System_Object__
-  commentId: M:Platform.Scopes.Scope.TryResolve(Type,System.Object@)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_TryResolve_System_Type_System_Object__
+  commentId: M:Platform.Scopes.Scope.TryResolve(System.Type,System.Object@)
   name.vb: TryResolve(Type, ByRef Object)
-  fullName: Platform.Scopes.Scope.TryResolve(Type, out System.Object)
-  fullName.vb: Platform.Scopes.Scope.TryResolve(Type, ByRef System.Object)
+  fullName: Platform.Scopes.Scope.TryResolve(System.Type, out System.Object)
+  fullName.vb: Platform.Scopes.Scope.TryResolve(System.Type, ByRef System.Object)
   nameWithType: Scope.TryResolve(Type, out Object)
   nameWithType.vb: Scope.TryResolve(Type, ByRef Object)
 - uid: Platform.Scopes.Scope.TryResolve*
@@ -226,13 +226,13 @@ references:
   fullName.vb: Platform.Scopes.Scope.TryResolve(Of T)(ByRef T)
   nameWithType: Scope.TryResolve<T>(out T)
   nameWithType.vb: Scope.TryResolve(Of T)(ByRef T)
-- uid: Platform.Scopes.Scope.TryResolveInstance(List{ConstructorInfo},System.Object@)
+- uid: Platform.Scopes.Scope.TryResolveInstance(System.Collections.Generic.List{System.Reflection.ConstructorInfo},System.Object@)
   name: TryResolveInstance(List<ConstructorInfo>, out Object)
-  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_TryResolveInstance_List_ConstructorInfo__System_Object__
-  commentId: M:Platform.Scopes.Scope.TryResolveInstance(List{ConstructorInfo},System.Object@)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_TryResolveInstance_System_Collections_Generic_List_System_Reflection_ConstructorInfo__System_Object__
+  commentId: M:Platform.Scopes.Scope.TryResolveInstance(System.Collections.Generic.List{System.Reflection.ConstructorInfo},System.Object@)
   name.vb: TryResolveInstance(List(Of ConstructorInfo), ByRef Object)
-  fullName: Platform.Scopes.Scope.TryResolveInstance(List<ConstructorInfo>, out System.Object)
-  fullName.vb: Platform.Scopes.Scope.TryResolveInstance(List(Of ConstructorInfo), ByRef System.Object)
+  fullName: Platform.Scopes.Scope.TryResolveInstance(System.Collections.Generic.List<System.Reflection.ConstructorInfo>, out System.Object)
+  fullName.vb: Platform.Scopes.Scope.TryResolveInstance(System.Collections.Generic.List(Of System.Reflection.ConstructorInfo), ByRef System.Object)
   nameWithType: Scope.TryResolveInstance(List<ConstructorInfo>, out Object)
   nameWithType.vb: Scope.TryResolveInstance(List(Of ConstructorInfo), ByRef Object)
 - uid: Platform.Scopes.Scope.TryResolveInstance*
@@ -287,24 +287,24 @@ references:
   isSpec: "True"
   fullName: Platform.Scopes.Scope.UseSingleton
   nameWithType: Scope.UseSingleton
-- uid: Platform.Scopes.Scope.UseSingleton``1(Func{``0})
-  name: UseSingleton<T>(Func<T>)
-  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_UseSingleton__1_Func___0__
-  commentId: M:Platform.Scopes.Scope.UseSingleton``1(Func{``0})
-  name.vb: UseSingleton(Of T)(Func(Of T))
-  fullName: Platform.Scopes.Scope.UseSingleton<T>(Func<T>)
-  fullName.vb: Platform.Scopes.Scope.UseSingleton(Of T)(Func(Of T))
-  nameWithType: Scope.UseSingleton<T>(Func<T>)
-  nameWithType.vb: Scope.UseSingleton(Of T)(Func(Of T))
-- uid: Platform.Scopes.Scope.UseSingleton``1(IFactory{``0})
+- uid: Platform.Scopes.Scope.UseSingleton``1(Platform.Interfaces.IFactory{``0})
   name: UseSingleton<T>(IFactory<T>)
-  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_UseSingleton__1_IFactory___0__
-  commentId: M:Platform.Scopes.Scope.UseSingleton``1(IFactory{``0})
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_UseSingleton__1_Platform_Interfaces_IFactory___0__
+  commentId: M:Platform.Scopes.Scope.UseSingleton``1(Platform.Interfaces.IFactory{``0})
   name.vb: UseSingleton(Of T)(IFactory(Of T))
-  fullName: Platform.Scopes.Scope.UseSingleton<T>(IFactory<T>)
-  fullName.vb: Platform.Scopes.Scope.UseSingleton(Of T)(IFactory(Of T))
+  fullName: Platform.Scopes.Scope.UseSingleton<T>(Platform.Interfaces.IFactory<T>)
+  fullName.vb: Platform.Scopes.Scope.UseSingleton(Of T)(Platform.Interfaces.IFactory(Of T))
   nameWithType: Scope.UseSingleton<T>(IFactory<T>)
   nameWithType.vb: Scope.UseSingleton(Of T)(IFactory(Of T))
+- uid: Platform.Scopes.Scope.UseSingleton``1(System.Func{``0})
+  name: UseSingleton<T>(Func<T>)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_UseSingleton__1_System_Func___0__
+  commentId: M:Platform.Scopes.Scope.UseSingleton``1(System.Func{``0})
+  name.vb: UseSingleton(Of T)(Func(Of T))
+  fullName: Platform.Scopes.Scope.UseSingleton<T>(System.Func<T>)
+  fullName.vb: Platform.Scopes.Scope.UseSingleton(Of T)(System.Func(Of T))
+  nameWithType: Scope.UseSingleton<T>(Func<T>)
+  nameWithType.vb: Scope.UseSingleton(Of T)(Func(Of T))
 - uid: Platform.Scopes.Scope`1
   name: Scope<TInclude>
   href: api/Platform.Scopes.Scope-1.html
