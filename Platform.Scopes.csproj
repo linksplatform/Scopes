@@ -6,7 +6,7 @@
     <AssemblyTitle>Platform.Scopes</AssemblyTitle>
     <VersionPrefix>0.0.4</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
     <AssemblyName>Platform.Scopes</AssemblyName>
     <PackageId>Platform.Scopes</PackageId>
     <PackageTags>LinksPlatform;Scopes;Scope;Use</PackageTags>
