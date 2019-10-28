@@ -32,7 +32,7 @@ Project file updated to support multiple build environments: dotnet, Travis CI, 
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Platform.Singletons" Version="0.0.4" />
+    <PackageReference Include="Platform.Singletons" Version="0.0.5" />
   </ItemGroup>
 
 </Project>
