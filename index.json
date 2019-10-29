@@ -4,11 +4,6 @@
     "title": "Scopes | LinksPlatform's Platform.Scopes Library",
     "keywords": "Scopes LinksPlatform's Platform.Scopes Class Library. Namespace: Platform.Scopes Forked from: LinksPlatform/Helpers/Scopes NuGet package: Platform.Scopes Documentation PDF file with code for e-readers. Depend on Platform.Singletons"
   },
-  "api/Platform.Scopes.Use-1.html": {
-    "href": "api/Platform.Scopes.Use-1.html",
-    "title": "Class Use<T> | LinksPlatform's Platform.Scopes Library",
-    "keywords": "Class Use<T> Inheritance Object Use<T> Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Scopes Assembly : Platform.Scopes.dll Syntax public static class Use<T> Type Parameters Name Description T Properties | Improve this Doc View Source New Declaration public static Disposable<T> New { get; } Property Value Type Description Platform.Disposables.Disposable <T> | Improve this Doc View Source Single Declaration public static T Single { get; } Property Value Type Description T"
-  },
   "api/Platform.Scopes.Scope-1.html": {
     "href": "api/Platform.Scopes.Scope-1.html",
     "title": "Class Scope<TInclude> | LinksPlatform's Platform.Scopes Library",
@@ -18,6 +13,11 @@
     "href": "api/Platform.Scopes.html",
     "title": "Namespace Platform.Scopes | LinksPlatform's Platform.Scopes Library",
     "keywords": "Namespace Platform.Scopes Classes Scope Scope<TInclude> Use<T>"
+  },
+  "api/Platform.Scopes.Use-1.html": {
+    "href": "api/Platform.Scopes.Use-1.html",
+    "title": "Class Use<T> | LinksPlatform's Platform.Scopes Library",
+    "keywords": "Class Use<T> Inheritance Object Use<T> Inherited Members Object.Equals(Object) Object.Equals(Object, Object) Object.GetHashCode() Object.GetType() Object.MemberwiseClone() Object.ReferenceEquals(Object, Object) Object.ToString() Namespace : Platform.Scopes Assembly : Platform.Scopes.dll Syntax public static class Use<T> Type Parameters Name Description T Properties | Improve this Doc View Source New Declaration public static Disposable<T> New { get; } Property Value Type Description Platform.Disposables.Disposable <T> | Improve this Doc View Source Single Declaration public static T Single { get; } Property Value Type Description T"
   },
   "api/Platform.Scopes.Scope.html": {
     "href": "api/Platform.Scopes.Scope.html",
