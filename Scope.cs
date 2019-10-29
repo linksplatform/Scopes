@@ -8,6 +8,7 @@ using Platform.Disposables;
 using Platform.Collections.Lists;
 using Platform.Reflection;
 using Platform.Singletons;
+using System.Runtime.CompilerServices;
 
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
 
@@ -25,38 +26,50 @@ namespace Platform.Scopes
         private readonly HashSet<object> _blocked = new HashSet<object>();
         private readonly Dictionary<Type, object> _resolutions = new Dictionary<Type, object>();
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Scope(bool autoInclude, bool autoExplore)
         {
             _autoInclude = autoInclude;
             _autoExplore = autoExplore;
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Scope(bool autoInclude) : this(autoInclude, false) { }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Scope() { }
 
         #region Exclude
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void ExcludeAssemblyOf<T>() => ExcludeAssemblyOfType(typeof(T));
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void ExcludeAssemblyOfType(Type type) => ExcludeAssembly(type.GetAssembly());
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void ExcludeAssembly(Assembly assembly) => assembly.GetCachedLoadableTypes().ForEach(Exclude);
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void Exclude<T>() => Exclude(typeof(T));
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void Exclude(object @object) => _excludes.Add(@object);
 
         #endregion
 
         #region Include
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void IncludeAssemblyOf<T>() => IncludeAssemblyOfType(typeof(T));
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void IncludeAssemblyOfType(Type type) => IncludeAssembly(type.GetAssembly());
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void IncludeAssembly(Assembly assembly) => assembly.GetExportedTypes().ForEach(Include);
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void Include<T>()
         {
             var types = Types<T>.Array;
@@ -70,6 +83,7 @@ namespace Platform.Scopes
             }
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void Include(object @object)
         {
             if (@object == null)
@@ -96,6 +110,7 @@ namespace Platform.Scopes
         /// TODO: Think of interface chaining IDoubletLinks[T] (default) -> IDoubletLinks[T] (checker) -> IDoubletLinks[T] (synchronizer) (may be UseChain[IDoubletLinks[T], Types[DefaultLinks, DefaultLinksDependencyChecker, DefaultSynchronizedLinks]]
         /// TODO: Add support for factories
         /// </remarks>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public T Use<T>()
         {
             if (_excludes.Contains(typeof(T)))
@@ -118,16 +133,20 @@ namespace Platform.Scopes
             return resolved;
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public T UseSingleton<T>(IFactory<T> factory) => UseAndReturn(Singleton.Get(factory));
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public T UseSingleton<T>(Func<T> creator) => UseAndReturn(Singleton.Get(creator));
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public T UseAndReturn<T>(T @object)
         {
             Use(@object);
             return @object;
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void Use(object @object)
         {
             Include(@object);
@@ -138,6 +157,7 @@ namespace Platform.Scopes
 
         #region Resolve
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool TryResolve<T>(out T resolved)
         {
             resolved = default;
@@ -149,6 +169,7 @@ namespace Platform.Scopes
             return result;
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool TryResolve(Type requiredType, out object resolved)
         {
             resolved = null;
@@ -223,8 +244,10 @@ namespace Platform.Scopes
             }
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         protected virtual void SortConstructors(List<ConstructorInfo> resultConstructors) => resultConstructors.Sort((x, y) => -x.GetParameters().Length.CompareTo(y.GetParameters().Length));
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         protected virtual bool TryResolveInstance(List<ConstructorInfo> constructors, out object resolved)
         {
             for (var i = 0; i < constructors.Count; i++)
@@ -247,6 +270,7 @@ namespace Platform.Scopes
             return false;
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private ConstructorInfo[] GetValidConstructors(Type type)
         {
             var constructors = type.GetConstructors();
@@ -268,6 +292,7 @@ namespace Platform.Scopes
             return constructors;
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private bool TryResolveConstructorArguments(ConstructorInfo constructor, out object[] arguments)
         {
             var parameters = constructor.GetParameters();
@@ -286,6 +311,7 @@ namespace Platform.Scopes
 
         #endregion
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         protected override void Dispose(bool manual, bool wasDisposed)
         {
             if (!wasDisposed)
