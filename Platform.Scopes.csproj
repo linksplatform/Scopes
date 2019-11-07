@@ -42,7 +42,7 @@ Performance optimizations.</PackageReleaseNotes>
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Platform.Singletons" Version="0.0.5" />
+    <PackageReference Include="Platform.Singletons" Version="0.0.6" />
   </ItemGroup>
 
 </Project>
