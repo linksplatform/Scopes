@@ -1,3 +1,392 @@
 ### YamlMime:XRefMap
 sorted: true
-references: []
+references:
+- uid: Platform.Scopes
+  name: Platform.Scopes
+  href: api/Platform.Scopes.html
+  commentId: N:Platform.Scopes
+  fullName: Platform.Scopes
+  nameWithType: Platform.Scopes
+- uid: Platform.Scopes.Scope
+  name: Scope
+  href: api/Platform.Scopes.Scope.html
+  commentId: T:Platform.Scopes.Scope
+  fullName: Platform.Scopes.Scope
+  nameWithType: Scope
+- uid: Platform.Scopes.Scope.#ctor
+  name: Scope()
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope__ctor
+  commentId: M:Platform.Scopes.Scope.#ctor
+  fullName: Platform.Scopes.Scope.Scope()
+  nameWithType: Scope.Scope()
+- uid: Platform.Scopes.Scope.#ctor(System.Boolean)
+  name: Scope(Boolean)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope__ctor_System_Boolean_
+  commentId: M:Platform.Scopes.Scope.#ctor(System.Boolean)
+  fullName: Platform.Scopes.Scope.Scope(System.Boolean)
+  nameWithType: Scope.Scope(Boolean)
+- uid: Platform.Scopes.Scope.#ctor(System.Boolean,System.Boolean)
+  name: Scope(Boolean, Boolean)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope__ctor_System_Boolean_System_Boolean_
+  commentId: M:Platform.Scopes.Scope.#ctor(System.Boolean,System.Boolean)
+  fullName: Platform.Scopes.Scope.Scope(System.Boolean, System.Boolean)
+  nameWithType: Scope.Scope(Boolean, Boolean)
+- uid: Platform.Scopes.Scope.#ctor*
+  name: Scope
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope__ctor_
+  commentId: Overload:Platform.Scopes.Scope.#ctor
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.Scope
+  nameWithType: Scope.Scope
+- uid: Platform.Scopes.Scope.Dispose(System.Boolean,System.Boolean)
+  name: Dispose(Boolean, Boolean)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Dispose_System_Boolean_System_Boolean_
+  commentId: M:Platform.Scopes.Scope.Dispose(System.Boolean,System.Boolean)
+  fullName: Platform.Scopes.Scope.Dispose(System.Boolean, System.Boolean)
+  nameWithType: Scope.Dispose(Boolean, Boolean)
+- uid: Platform.Scopes.Scope.Dispose*
+  name: Dispose
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Dispose_
+  commentId: Overload:Platform.Scopes.Scope.Dispose
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.Dispose
+  nameWithType: Scope.Dispose
+- uid: Platform.Scopes.Scope.Exclude(System.Object)
+  name: Exclude(Object)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Exclude_System_Object_
+  commentId: M:Platform.Scopes.Scope.Exclude(System.Object)
+  fullName: Platform.Scopes.Scope.Exclude(System.Object)
+  nameWithType: Scope.Exclude(Object)
+- uid: Platform.Scopes.Scope.Exclude*
+  name: Exclude
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Exclude_
+  commentId: Overload:Platform.Scopes.Scope.Exclude
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.Exclude
+  nameWithType: Scope.Exclude
+- uid: Platform.Scopes.Scope.Exclude``1
+  name: Exclude<T>()
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Exclude__1
+  commentId: M:Platform.Scopes.Scope.Exclude``1
+  name.vb: Exclude(Of T)()
+  fullName: Platform.Scopes.Scope.Exclude<T>()
+  fullName.vb: Platform.Scopes.Scope.Exclude(Of T)()
+  nameWithType: Scope.Exclude<T>()
+  nameWithType.vb: Scope.Exclude(Of T)()
+- uid: Platform.Scopes.Scope.ExcludeAssembly(System.Reflection.Assembly)
+  name: ExcludeAssembly(Assembly)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_ExcludeAssembly_System_Reflection_Assembly_
+  commentId: M:Platform.Scopes.Scope.ExcludeAssembly(System.Reflection.Assembly)
+  fullName: Platform.Scopes.Scope.ExcludeAssembly(System.Reflection.Assembly)
+  nameWithType: Scope.ExcludeAssembly(Assembly)
+- uid: Platform.Scopes.Scope.ExcludeAssembly*
+  name: ExcludeAssembly
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_ExcludeAssembly_
+  commentId: Overload:Platform.Scopes.Scope.ExcludeAssembly
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.ExcludeAssembly
+  nameWithType: Scope.ExcludeAssembly
+- uid: Platform.Scopes.Scope.ExcludeAssemblyOf*
+  name: ExcludeAssemblyOf
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_ExcludeAssemblyOf_
+  commentId: Overload:Platform.Scopes.Scope.ExcludeAssemblyOf
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.ExcludeAssemblyOf
+  nameWithType: Scope.ExcludeAssemblyOf
+- uid: Platform.Scopes.Scope.ExcludeAssemblyOf``1
+  name: ExcludeAssemblyOf<T>()
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_ExcludeAssemblyOf__1
+  commentId: M:Platform.Scopes.Scope.ExcludeAssemblyOf``1
+  name.vb: ExcludeAssemblyOf(Of T)()
+  fullName: Platform.Scopes.Scope.ExcludeAssemblyOf<T>()
+  fullName.vb: Platform.Scopes.Scope.ExcludeAssemblyOf(Of T)()
+  nameWithType: Scope.ExcludeAssemblyOf<T>()
+  nameWithType.vb: Scope.ExcludeAssemblyOf(Of T)()
+- uid: Platform.Scopes.Scope.ExcludeAssemblyOfType(System.Type)
+  name: ExcludeAssemblyOfType(Type)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_ExcludeAssemblyOfType_System_Type_
+  commentId: M:Platform.Scopes.Scope.ExcludeAssemblyOfType(System.Type)
+  fullName: Platform.Scopes.Scope.ExcludeAssemblyOfType(System.Type)
+  nameWithType: Scope.ExcludeAssemblyOfType(Type)
+- uid: Platform.Scopes.Scope.ExcludeAssemblyOfType*
+  name: ExcludeAssemblyOfType
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_ExcludeAssemblyOfType_
+  commentId: Overload:Platform.Scopes.Scope.ExcludeAssemblyOfType
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.ExcludeAssemblyOfType
+  nameWithType: Scope.ExcludeAssemblyOfType
+- uid: Platform.Scopes.Scope.Global
+  name: Global
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Global
+  commentId: F:Platform.Scopes.Scope.Global
+  fullName: Platform.Scopes.Scope.Global
+  nameWithType: Scope.Global
+- uid: Platform.Scopes.Scope.Include(System.Object)
+  name: Include(Object)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Include_System_Object_
+  commentId: M:Platform.Scopes.Scope.Include(System.Object)
+  fullName: Platform.Scopes.Scope.Include(System.Object)
+  nameWithType: Scope.Include(Object)
+- uid: Platform.Scopes.Scope.Include*
+  name: Include
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Include_
+  commentId: Overload:Platform.Scopes.Scope.Include
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.Include
+  nameWithType: Scope.Include
+- uid: Platform.Scopes.Scope.Include``1
+  name: Include<T>()
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Include__1
+  commentId: M:Platform.Scopes.Scope.Include``1
+  name.vb: Include(Of T)()
+  fullName: Platform.Scopes.Scope.Include<T>()
+  fullName.vb: Platform.Scopes.Scope.Include(Of T)()
+  nameWithType: Scope.Include<T>()
+  nameWithType.vb: Scope.Include(Of T)()
+- uid: Platform.Scopes.Scope.IncludeAssembly(System.Reflection.Assembly)
+  name: IncludeAssembly(Assembly)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_IncludeAssembly_System_Reflection_Assembly_
+  commentId: M:Platform.Scopes.Scope.IncludeAssembly(System.Reflection.Assembly)
+  fullName: Platform.Scopes.Scope.IncludeAssembly(System.Reflection.Assembly)
+  nameWithType: Scope.IncludeAssembly(Assembly)
+- uid: Platform.Scopes.Scope.IncludeAssembly*
+  name: IncludeAssembly
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_IncludeAssembly_
+  commentId: Overload:Platform.Scopes.Scope.IncludeAssembly
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.IncludeAssembly
+  nameWithType: Scope.IncludeAssembly
+- uid: Platform.Scopes.Scope.IncludeAssemblyOf*
+  name: IncludeAssemblyOf
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_IncludeAssemblyOf_
+  commentId: Overload:Platform.Scopes.Scope.IncludeAssemblyOf
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.IncludeAssemblyOf
+  nameWithType: Scope.IncludeAssemblyOf
+- uid: Platform.Scopes.Scope.IncludeAssemblyOf``1
+  name: IncludeAssemblyOf<T>()
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_IncludeAssemblyOf__1
+  commentId: M:Platform.Scopes.Scope.IncludeAssemblyOf``1
+  name.vb: IncludeAssemblyOf(Of T)()
+  fullName: Platform.Scopes.Scope.IncludeAssemblyOf<T>()
+  fullName.vb: Platform.Scopes.Scope.IncludeAssemblyOf(Of T)()
+  nameWithType: Scope.IncludeAssemblyOf<T>()
+  nameWithType.vb: Scope.IncludeAssemblyOf(Of T)()
+- uid: Platform.Scopes.Scope.IncludeAssemblyOfType(System.Type)
+  name: IncludeAssemblyOfType(Type)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_IncludeAssemblyOfType_System_Type_
+  commentId: M:Platform.Scopes.Scope.IncludeAssemblyOfType(System.Type)
+  fullName: Platform.Scopes.Scope.IncludeAssemblyOfType(System.Type)
+  nameWithType: Scope.IncludeAssemblyOfType(Type)
+- uid: Platform.Scopes.Scope.IncludeAssemblyOfType*
+  name: IncludeAssemblyOfType
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_IncludeAssemblyOfType_
+  commentId: Overload:Platform.Scopes.Scope.IncludeAssemblyOfType
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.IncludeAssemblyOfType
+  nameWithType: Scope.IncludeAssemblyOfType
+- uid: Platform.Scopes.Scope.SortConstructors(System.Collections.Generic.List{System.Reflection.ConstructorInfo})
+  name: SortConstructors(List<ConstructorInfo>)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_SortConstructors_System_Collections_Generic_List_System_Reflection_ConstructorInfo__
+  commentId: M:Platform.Scopes.Scope.SortConstructors(System.Collections.Generic.List{System.Reflection.ConstructorInfo})
+  name.vb: SortConstructors(List(Of ConstructorInfo))
+  fullName: Platform.Scopes.Scope.SortConstructors(System.Collections.Generic.List<System.Reflection.ConstructorInfo>)
+  fullName.vb: Platform.Scopes.Scope.SortConstructors(System.Collections.Generic.List(Of System.Reflection.ConstructorInfo))
+  nameWithType: Scope.SortConstructors(List<ConstructorInfo>)
+  nameWithType.vb: Scope.SortConstructors(List(Of ConstructorInfo))
+- uid: Platform.Scopes.Scope.SortConstructors*
+  name: SortConstructors
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_SortConstructors_
+  commentId: Overload:Platform.Scopes.Scope.SortConstructors
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.SortConstructors
+  nameWithType: Scope.SortConstructors
+- uid: Platform.Scopes.Scope.TryResolve(System.Type,System.Object@)
+  name: TryResolve(Type, out Object)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_TryResolve_System_Type_System_Object__
+  commentId: M:Platform.Scopes.Scope.TryResolve(System.Type,System.Object@)
+  name.vb: TryResolve(Type, ByRef Object)
+  fullName: Platform.Scopes.Scope.TryResolve(System.Type, out System.Object)
+  fullName.vb: Platform.Scopes.Scope.TryResolve(System.Type, ByRef System.Object)
+  nameWithType: Scope.TryResolve(Type, out Object)
+  nameWithType.vb: Scope.TryResolve(Type, ByRef Object)
+- uid: Platform.Scopes.Scope.TryResolve*
+  name: TryResolve
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_TryResolve_
+  commentId: Overload:Platform.Scopes.Scope.TryResolve
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.TryResolve
+  nameWithType: Scope.TryResolve
+- uid: Platform.Scopes.Scope.TryResolve``1(``0@)
+  name: TryResolve<T>(out T)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_TryResolve__1___0__
+  commentId: M:Platform.Scopes.Scope.TryResolve``1(``0@)
+  name.vb: TryResolve(Of T)(ByRef T)
+  fullName: Platform.Scopes.Scope.TryResolve<T>(out T)
+  fullName.vb: Platform.Scopes.Scope.TryResolve(Of T)(ByRef T)
+  nameWithType: Scope.TryResolve<T>(out T)
+  nameWithType.vb: Scope.TryResolve(Of T)(ByRef T)
+- uid: Platform.Scopes.Scope.TryResolveInstance(System.Collections.Generic.List{System.Reflection.ConstructorInfo},System.Object@)
+  name: TryResolveInstance(List<ConstructorInfo>, out Object)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_TryResolveInstance_System_Collections_Generic_List_System_Reflection_ConstructorInfo__System_Object__
+  commentId: M:Platform.Scopes.Scope.TryResolveInstance(System.Collections.Generic.List{System.Reflection.ConstructorInfo},System.Object@)
+  name.vb: TryResolveInstance(List(Of ConstructorInfo), ByRef Object)
+  fullName: Platform.Scopes.Scope.TryResolveInstance(System.Collections.Generic.List<System.Reflection.ConstructorInfo>, out System.Object)
+  fullName.vb: Platform.Scopes.Scope.TryResolveInstance(System.Collections.Generic.List(Of System.Reflection.ConstructorInfo), ByRef System.Object)
+  nameWithType: Scope.TryResolveInstance(List<ConstructorInfo>, out Object)
+  nameWithType.vb: Scope.TryResolveInstance(List(Of ConstructorInfo), ByRef Object)
+- uid: Platform.Scopes.Scope.TryResolveInstance*
+  name: TryResolveInstance
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_TryResolveInstance_
+  commentId: Overload:Platform.Scopes.Scope.TryResolveInstance
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.TryResolveInstance
+  nameWithType: Scope.TryResolveInstance
+- uid: Platform.Scopes.Scope.Use(System.Object)
+  name: Use(Object)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Use_System_Object_
+  commentId: M:Platform.Scopes.Scope.Use(System.Object)
+  fullName: Platform.Scopes.Scope.Use(System.Object)
+  nameWithType: Scope.Use(Object)
+- uid: Platform.Scopes.Scope.Use*
+  name: Use
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Use_
+  commentId: Overload:Platform.Scopes.Scope.Use
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.Use
+  nameWithType: Scope.Use
+- uid: Platform.Scopes.Scope.Use``1
+  name: Use<T>()
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_Use__1
+  commentId: M:Platform.Scopes.Scope.Use``1
+  name.vb: Use(Of T)()
+  fullName: Platform.Scopes.Scope.Use<T>()
+  fullName.vb: Platform.Scopes.Scope.Use(Of T)()
+  nameWithType: Scope.Use<T>()
+  nameWithType.vb: Scope.Use(Of T)()
+- uid: Platform.Scopes.Scope.UseAndReturn*
+  name: UseAndReturn
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_UseAndReturn_
+  commentId: Overload:Platform.Scopes.Scope.UseAndReturn
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.UseAndReturn
+  nameWithType: Scope.UseAndReturn
+- uid: Platform.Scopes.Scope.UseAndReturn``1(``0)
+  name: UseAndReturn<T>(T)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_UseAndReturn__1___0_
+  commentId: M:Platform.Scopes.Scope.UseAndReturn``1(``0)
+  name.vb: UseAndReturn(Of T)(T)
+  fullName: Platform.Scopes.Scope.UseAndReturn<T>(T)
+  fullName.vb: Platform.Scopes.Scope.UseAndReturn(Of T)(T)
+  nameWithType: Scope.UseAndReturn<T>(T)
+  nameWithType.vb: Scope.UseAndReturn(Of T)(T)
+- uid: Platform.Scopes.Scope.UseSingleton*
+  name: UseSingleton
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_UseSingleton_
+  commentId: Overload:Platform.Scopes.Scope.UseSingleton
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope.UseSingleton
+  nameWithType: Scope.UseSingleton
+- uid: Platform.Scopes.Scope.UseSingleton``1(IFactory{``0})
+  name: UseSingleton<T>(IFactory<T>)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_UseSingleton__1_IFactory___0__
+  commentId: M:Platform.Scopes.Scope.UseSingleton``1(IFactory{``0})
+  name.vb: UseSingleton(Of T)(IFactory(Of T))
+  fullName: Platform.Scopes.Scope.UseSingleton<T>(IFactory<T>)
+  fullName.vb: Platform.Scopes.Scope.UseSingleton(Of T)(IFactory(Of T))
+  nameWithType: Scope.UseSingleton<T>(IFactory<T>)
+  nameWithType.vb: Scope.UseSingleton(Of T)(IFactory(Of T))
+- uid: Platform.Scopes.Scope.UseSingleton``1(System.Func{``0})
+  name: UseSingleton<T>(Func<T>)
+  href: api/Platform.Scopes.Scope.html#Platform_Scopes_Scope_UseSingleton__1_System_Func___0__
+  commentId: M:Platform.Scopes.Scope.UseSingleton``1(System.Func{``0})
+  name.vb: UseSingleton(Of T)(Func(Of T))
+  fullName: Platform.Scopes.Scope.UseSingleton<T>(System.Func<T>)
+  fullName.vb: Platform.Scopes.Scope.UseSingleton(Of T)(System.Func(Of T))
+  nameWithType: Scope.UseSingleton<T>(Func<T>)
+  nameWithType.vb: Scope.UseSingleton(Of T)(Func(Of T))
+- uid: Platform.Scopes.Scope`1
+  name: Scope<TInclude>
+  href: api/Platform.Scopes.Scope-1.html
+  commentId: T:Platform.Scopes.Scope`1
+  name.vb: Scope(Of TInclude)
+  fullName: Platform.Scopes.Scope<TInclude>
+  fullName.vb: Platform.Scopes.Scope(Of TInclude)
+  nameWithType: Scope<TInclude>
+  nameWithType.vb: Scope(Of TInclude)
+- uid: Platform.Scopes.Scope`1.#ctor
+  name: Scope()
+  href: api/Platform.Scopes.Scope-1.html#Platform_Scopes_Scope_1__ctor
+  commentId: M:Platform.Scopes.Scope`1.#ctor
+  fullName: Platform.Scopes.Scope<TInclude>.Scope()
+  fullName.vb: Platform.Scopes.Scope(Of TInclude).Scope()
+  nameWithType: Scope<TInclude>.Scope()
+  nameWithType.vb: Scope(Of TInclude).Scope()
+- uid: Platform.Scopes.Scope`1.#ctor(System.Boolean)
+  name: Scope(Boolean)
+  href: api/Platform.Scopes.Scope-1.html#Platform_Scopes_Scope_1__ctor_System_Boolean_
+  commentId: M:Platform.Scopes.Scope`1.#ctor(System.Boolean)
+  fullName: Platform.Scopes.Scope<TInclude>.Scope(System.Boolean)
+  fullName.vb: Platform.Scopes.Scope(Of TInclude).Scope(System.Boolean)
+  nameWithType: Scope<TInclude>.Scope(Boolean)
+  nameWithType.vb: Scope(Of TInclude).Scope(Boolean)
+- uid: Platform.Scopes.Scope`1.#ctor(System.Boolean,System.Boolean)
+  name: Scope(Boolean, Boolean)
+  href: api/Platform.Scopes.Scope-1.html#Platform_Scopes_Scope_1__ctor_System_Boolean_System_Boolean_
+  commentId: M:Platform.Scopes.Scope`1.#ctor(System.Boolean,System.Boolean)
+  fullName: Platform.Scopes.Scope<TInclude>.Scope(System.Boolean, System.Boolean)
+  fullName.vb: Platform.Scopes.Scope(Of TInclude).Scope(System.Boolean, System.Boolean)
+  nameWithType: Scope<TInclude>.Scope(Boolean, Boolean)
+  nameWithType.vb: Scope(Of TInclude).Scope(Boolean, Boolean)
+- uid: Platform.Scopes.Scope`1.#ctor*
+  name: Scope
+  href: api/Platform.Scopes.Scope-1.html#Platform_Scopes_Scope_1__ctor_
+  commentId: Overload:Platform.Scopes.Scope`1.#ctor
+  isSpec: "True"
+  fullName: Platform.Scopes.Scope<TInclude>.Scope
+  fullName.vb: Platform.Scopes.Scope(Of TInclude).Scope
+  nameWithType: Scope<TInclude>.Scope
+  nameWithType.vb: Scope(Of TInclude).Scope
+- uid: Platform.Scopes.Use`1
+  name: Use<T>
+  href: api/Platform.Scopes.Use-1.html
+  commentId: T:Platform.Scopes.Use`1
+  name.vb: Use(Of T)
+  fullName: Platform.Scopes.Use<T>
+  fullName.vb: Platform.Scopes.Use(Of T)
+  nameWithType: Use<T>
+  nameWithType.vb: Use(Of T)
+- uid: Platform.Scopes.Use`1.New
+  name: New
+  href: api/Platform.Scopes.Use-1.html#Platform_Scopes_Use_1_New
+  commentId: P:Platform.Scopes.Use`1.New
+  fullName: Platform.Scopes.Use<T>.New
+  fullName.vb: Platform.Scopes.Use(Of T).New
+  nameWithType: Use<T>.New
+  nameWithType.vb: Use(Of T).New
+- uid: Platform.Scopes.Use`1.New*
+  name: New
+  href: api/Platform.Scopes.Use-1.html#Platform_Scopes_Use_1_New_
+  commentId: Overload:Platform.Scopes.Use`1.New
+  isSpec: "True"
+  fullName: Platform.Scopes.Use<T>.New
+  fullName.vb: Platform.Scopes.Use(Of T).New
+  nameWithType: Use<T>.New
+  nameWithType.vb: Use(Of T).New
+- uid: Platform.Scopes.Use`1.Single
+  name: Single
+  href: api/Platform.Scopes.Use-1.html#Platform_Scopes_Use_1_Single
+  commentId: P:Platform.Scopes.Use`1.Single
+  fullName: Platform.Scopes.Use<T>.Single
+  fullName.vb: Platform.Scopes.Use(Of T).Single
+  nameWithType: Use<T>.Single
+  nameWithType.vb: Use(Of T).Single
+- uid: Platform.Scopes.Use`1.Single*
+  name: Single
+  href: api/Platform.Scopes.Use-1.html#Platform_Scopes_Use_1_Single_
+  commentId: Overload:Platform.Scopes.Use`1.Single
+  isSpec: "True"
+  fullName: Platform.Scopes.Use<T>.Single
+  fullName.vb: Platform.Scopes.Use(Of T).Single
+  nameWithType: Use<T>.Single
+  nameWithType.vb: Use(Of T).Single

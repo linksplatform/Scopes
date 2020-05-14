@@ -18,7 +18,67 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "uR1Gf4eb4j2rkRrJxfAr4w=="
+          "hash": "LV35I3SQO/xXzI/Ep/OFEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Scopes.Scope-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Scopes.Scope-1.html",
+          "hash": "7Uxt6oRsYYyo0EmXhSab6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Scopes.Scope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Scopes.Scope.html",
+          "hash": "6WUn02VFiRAEm8EBsq1IDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Scopes.Use-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Scopes.Use-1.html",
+          "hash": "J6QEMSt/zP+w3PVrOvlbAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Platform.Scopes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Platform.Scopes.html",
+          "hash": "FngVTJH+SFZWwwQ44U857A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "crRaBzjuzXwKB2wWNWaRTA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "6WFXwJmEXSnGC5BqSk64rg=="
+          "hash": "+UUmAQLNYuGvKsaFEa63Yw=="
         }
       },
       "is_incremental": false,
@@ -55,6 +115,12 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 1,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
