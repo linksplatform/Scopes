@@ -7,14 +7,14 @@
 
 LinksPlatform's Platform.Scopes Class Library.
 
-Namespace: [Platform.Scopes](https://linksplatform.github.io/Scopes/api/Platform.Scopes.html)
+Namespace: [Platform.Scopes](https://linksplatform.github.io/Scopes/csharp/api/Platform.Scopes.html)
 
 Forked from: [LinksPlatform/Helpers/Scopes](https://github.com/linksplatform/Helpers/tree/e27f7586f8015cad596b6aa3c2df2ac2a3dadb60/Scopes)
 
 NuGet package: [Platform.Scopes](https://www.nuget.org/packages/Platform.Scopes)
 
 ## [Documentation](https://linksplatform.github.io/Scopes)
-[PDF file](https://linksplatform.github.io/Scopes/Platform.Scopes.pdf) with code for e-readers.
+[PDF file](https://linksplatform.github.io/Scopes/csharp/Platform.Scopes.pdf) with code for e-readers.
 
 ## Depend on
 *   [Platform.Singletons](https://github.com/linksplatform/Singletons)
