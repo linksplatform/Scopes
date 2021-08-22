@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Linq;
@@ -14,18 +14,87 @@ using System.Runtime.CompilerServices;
 
 namespace Platform.Scopes
 {
+    /// <summary>
+    /// <para>
+    /// Represents the scope.
+    /// </para>
+    /// <para></para>
+    /// </summary>
+    /// <seealso cref="DisposableBase"/>
     public class Scope : DisposableBase
     {
+        /// <summary>
+        /// <para>
+        /// The auto explore.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         public static readonly Scope Global = new Scope(autoInclude: true, autoExplore: true);
 
+        /// <summary>
+        /// <para>
+        /// The auto include.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly bool _autoInclude;
+        /// <summary>
+        /// <para>
+        /// The auto explore.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly bool _autoExplore;
+        /// <summary>
+        /// <para>
+        /// The stack.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly Stack<object> _dependencies = new Stack<object>();
+        /// <summary>
+        /// <para>
+        /// The hash set.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly HashSet<object> _excludes = new HashSet<object>();
+        /// <summary>
+        /// <para>
+        /// The hash set.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly HashSet<object> _includes = new HashSet<object>();
+        /// <summary>
+        /// <para>
+        /// The hash set.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly HashSet<object> _blocked = new HashSet<object>();
+        /// <summary>
+        /// <para>
+        /// The type.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly Dictionary<Type, object> _resolutions = new Dictionary<Type, object>();
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="Scope"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="autoInclude">
+        /// <para>A auto include.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="autoExplore">
+        /// <para>A auto explore.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Scope(bool autoInclude, bool autoExplore)
         {
@@ -33,26 +102,92 @@ namespace Platform.Scopes
             _autoExplore = autoExplore;
         }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="Scope"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="autoInclude">
+        /// <para>A auto include.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Scope(bool autoInclude) : this(autoInclude, false) { }
 
+        /// <summary>
+        /// <para>
+        /// Initializes a new <see cref="Scope"/> instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Scope() { }
 
         #region Exclude
 
+        /// <summary>
+        /// <para>
+        /// Excludes the assembly of.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="T">
+        /// <para>The .</para>
+        /// <para></para>
+        /// </typeparam>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void ExcludeAssemblyOf<T>() => ExcludeAssemblyOfType(typeof(T));
 
+        /// <summary>
+        /// <para>
+        /// Excludes the assembly of type using the specified type.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="type">
+        /// <para>The type.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void ExcludeAssemblyOfType(Type type) => ExcludeAssembly(type.GetAssembly());
 
+        /// <summary>
+        /// <para>
+        /// Excludes the assembly using the specified assembly.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="assembly">
+        /// <para>The assembly.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void ExcludeAssembly(Assembly assembly) => assembly.GetCachedLoadableTypes().ForEach(Exclude);
 
+        /// <summary>
+        /// <para>
+        /// Excludes this instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="T">
+        /// <para>The .</para>
+        /// <para></para>
+        /// </typeparam>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void Exclude<T>() => Exclude(typeof(T));
 
+        /// <summary>
+        /// <para>
+        /// Excludes the object.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="@object">
+        /// <para>The object.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void Exclude(object @object) => _excludes.Add(@object);
 
@@ -60,15 +195,55 @@ namespace Platform.Scopes
 
         #region Include
 
+        /// <summary>
+        /// <para>
+        /// Includes the assembly of.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="T">
+        /// <para>The .</para>
+        /// <para></para>
+        /// </typeparam>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void IncludeAssemblyOf<T>() => IncludeAssemblyOfType(typeof(T));
 
+        /// <summary>
+        /// <para>
+        /// Includes the assembly of type using the specified type.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="type">
+        /// <para>The type.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void IncludeAssemblyOfType(Type type) => IncludeAssembly(type.GetAssembly());
 
+        /// <summary>
+        /// <para>
+        /// Includes the assembly using the specified assembly.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="assembly">
+        /// <para>The assembly.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void IncludeAssembly(Assembly assembly) => assembly.GetExportedTypes().ForEach(Include);
 
+        /// <summary>
+        /// <para>
+        /// Includes this instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="T">
+        /// <para>The .</para>
+        /// <para></para>
+        /// </typeparam>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void Include<T>()
         {
@@ -83,6 +258,16 @@ namespace Platform.Scopes
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Includes the object.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="@object">
+        /// <para>The object.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void Include(object @object)
         {
@@ -133,12 +318,66 @@ namespace Platform.Scopes
             return resolved;
         }
 
+        /// <summary>
+        /// <para>
+        /// Uses the singleton using the specified factory.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="T">
+        /// <para>The .</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="factory">
+        /// <para>The factory.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public T UseSingleton<T>(IFactory<T> factory) => UseAndReturn(Singleton.Get(factory));
 
+        /// <summary>
+        /// <para>
+        /// Uses the singleton using the specified creator.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="T">
+        /// <para>The .</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="creator">
+        /// <para>The creator.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public T UseSingleton<T>(Func<T> creator) => UseAndReturn(Singleton.Get(creator));
 
+        /// <summary>
+        /// <para>
+        /// Uses the and return using the specified object.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="T">
+        /// <para>The .</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="@object">
+        /// <para>The object.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The object.</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public T UseAndReturn<T>(T @object)
         {
@@ -146,6 +385,16 @@ namespace Platform.Scopes
             return @object;
         }
 
+        /// <summary>
+        /// <para>
+        /// Uses the object.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="@object">
+        /// <para>The object.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void Use(object @object)
         {
@@ -157,6 +406,24 @@ namespace Platform.Scopes
 
         #region Resolve
 
+        /// <summary>
+        /// <para>
+        /// Determines whether this instance try resolve.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <typeparam name="T">
+        /// <para>The .</para>
+        /// <para></para>
+        /// </typeparam>
+        /// <param name="resolved">
+        /// <para>The resolved.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The result.</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool TryResolve<T>(out T resolved)
         {
@@ -169,6 +436,24 @@ namespace Platform.Scopes
             return result;
         }
 
+        /// <summary>
+        /// <para>
+        /// Determines whether this instance try resolve.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="requiredType">
+        /// <para>The required type.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="resolved">
+        /// <para>The resolved.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool TryResolve(Type requiredType, out object resolved)
         {
@@ -244,9 +529,37 @@ namespace Platform.Scopes
             }
         }
 
+        /// <summary>
+        /// <para>
+        /// Sorts the constructors using the specified result constructors.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="resultConstructors">
+        /// <para>The result constructors.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         protected virtual void SortConstructors(List<ConstructorInfo> resultConstructors) => resultConstructors.Sort((x, y) => -x.GetParameters().Length.CompareTo(y.GetParameters().Length));
 
+        /// <summary>
+        /// <para>
+        /// Determines whether this instance try resolve instance.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="constructors">
+        /// <para>The constructors.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="resolved">
+        /// <para>The resolved.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         protected virtual bool TryResolveInstance(List<ConstructorInfo> constructors, out object resolved)
         {
@@ -270,6 +583,20 @@ namespace Platform.Scopes
             return false;
         }
 
+        /// <summary>
+        /// <para>
+        /// Gets the valid constructors using the specified type.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="type">
+        /// <para>The type.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The constructors.</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private ConstructorInfo[] GetValidConstructors(Type type)
         {
@@ -292,6 +619,24 @@ namespace Platform.Scopes
             return constructors;
         }
 
+        /// <summary>
+        /// <para>
+        /// Determines whether this instance try resolve constructor arguments.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="constructor">
+        /// <para>The constructor.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="arguments">
+        /// <para>The arguments.</para>
+        /// <para></para>
+        /// </param>
+        /// <returns>
+        /// <para>The bool</para>
+        /// <para></para>
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private bool TryResolveConstructorArguments(ConstructorInfo constructor, out object[] arguments)
         {
@@ -311,6 +656,20 @@ namespace Platform.Scopes
 
         #endregion
 
+        /// <summary>
+        /// <para>
+        /// Disposes the manual.
+        /// </para>
+        /// <para></para>
+        /// </summary>
+        /// <param name="manual">
+        /// <para>The manual.</para>
+        /// <para></para>
+        /// </param>
+        /// <param name="wasDisposed">
+        /// <para>The was disposed.</para>
+        /// <para></para>
+        /// </param>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         protected override void Dispose(bool manual, bool wasDisposed)
         {
