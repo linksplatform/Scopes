@@ -31,12 +31,54 @@ namespace Platform.Scopes
         /// </summary>
         public static readonly Scope Global = new Scope(autoInclude: true, autoExplore: true);
 
+        /// <summary>
+        /// <para>
+        /// The auto include.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly bool _autoInclude;
+        /// <summary>
+        /// <para>
+        /// The auto explore.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly bool _autoExplore;
+        /// <summary>
+        /// <para>
+        /// The stack.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly Stack<object> _dependencies = new Stack<object>();
+        /// <summary>
+        /// <para>
+        /// The hash set.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly HashSet<object> _excludes = new HashSet<object>();
+        /// <summary>
+        /// <para>
+        /// The hash set.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly HashSet<object> _includes = new HashSet<object>();
+        /// <summary>
+        /// <para>
+        /// The hash set.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly HashSet<object> _blocked = new HashSet<object>();
+        /// <summary>
+        /// <para>
+        /// The type.
+        /// </para>
+        /// <para></para>
+        /// </summary>
         private readonly Dictionary<Type, object> _resolutions = new Dictionary<Type, object>();
 
         /// <summary>
