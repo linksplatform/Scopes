@@ -30,55 +30,12 @@ namespace Platform.Scopes
         /// <para></para>
         /// </summary>
         public static readonly Scope Global = new Scope(autoInclude: true, autoExplore: true);
-
-        /// <summary>
-        /// <para>
-        /// The auto include.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         private readonly bool _autoInclude;
-        /// <summary>
-        /// <para>
-        /// The auto explore.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         private readonly bool _autoExplore;
-        /// <summary>
-        /// <para>
-        /// The stack.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         private readonly Stack<object> _dependencies = new Stack<object>();
-        /// <summary>
-        /// <para>
-        /// The hash set.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         private readonly HashSet<object> _excludes = new HashSet<object>();
-        /// <summary>
-        /// <para>
-        /// The hash set.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         private readonly HashSet<object> _includes = new HashSet<object>();
-        /// <summary>
-        /// <para>
-        /// The hash set.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         private readonly HashSet<object> _blocked = new HashSet<object>();
-        /// <summary>
-        /// <para>
-        /// The type.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         private readonly Dictionary<Type, object> _resolutions = new Dictionary<Type, object>();
 
         /// <summary>
@@ -582,22 +539,7 @@ namespace Platform.Scopes
             resolved = null;
             return false;
         }
-
-        /// <summary>
-        /// <para>
-        /// Gets the valid constructors using the specified type.
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        /// <param name="type">
-        /// <para>The type.</para>
-        /// <para></para>
-        /// </param>
-        /// <returns>
-        /// <para>The constructors.</para>
-        /// <para></para>
-        /// </returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+[MethodImpl(MethodImplOptions.AggressiveInlining)]
         private ConstructorInfo[] GetValidConstructors(Type type)
         {
             var constructors = type.GetConstructors();
@@ -618,26 +560,7 @@ namespace Platform.Scopes
             }
             return constructors;
         }
-
-        /// <summary>
-        /// <para>
-        /// Determines whether this instance try resolve constructor arguments.
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        /// <param name="constructor">
-        /// <para>The constructor.</para>
-        /// <para></para>
-        /// </param>
-        /// <param name="arguments">
-        /// <para>The arguments.</para>
-        /// <para></para>
-        /// </param>
-        /// <returns>
-        /// <para>The bool</para>
-        /// <para></para>
-        /// </returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+[MethodImpl(MethodImplOptions.AggressiveInlining)]
         private bool TryResolveConstructorArguments(ConstructorInfo constructor, out object[] arguments)
         {
             var parameters = constructor.GetParameters();
