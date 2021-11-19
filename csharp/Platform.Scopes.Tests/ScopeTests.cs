@@ -3,41 +3,16 @@ using Platform.Reflection;
 
 namespace Platform.Scopes.Tests
 {
-    /// <summary>
-    /// <para>
-    /// Represents the scope tests.
-    /// </para>
-    /// <para></para>
-    /// </summary>
     public class ScopeTests
     {
-        /// <summary>
-        /// <para>
-        /// Defines the interface.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         public interface IInterface
         {
         }
 
-        /// <summary>
-        /// <para>
-        /// Represents the .
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        /// <seealso cref="IInterface"/>
         public class Class : IInterface
         { 
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that single dependency test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public static void SingleDependencyTest()
         {
@@ -47,12 +22,6 @@ namespace Platform.Scopes.Tests
             Assert.IsType<Class>(instance);
         }
 
-        /// <summary>
-        /// <para>
-        /// Tests that type parameters test.
-        /// </para>
-        /// <para></para>
-        /// </summary>
         [Fact]
         public static void TypeParametersTest()
         {
