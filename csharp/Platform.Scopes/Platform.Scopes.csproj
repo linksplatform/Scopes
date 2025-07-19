@@ -6,7 +6,7 @@
     <AssemblyTitle>Platform.Scopes</AssemblyTitle>
     <VersionPrefix>0.1.0</VersionPrefix>
     <Authors>Konstantin Diachenko</Authors>
-    <TargetFramework>net7</TargetFramework>
+    <TargetFramework>net8</TargetFramework>
     <AssemblyName>Platform.Scopes</AssemblyName>
     <PackageId>Platform.Scopes</PackageId>
     <PackageTags>LinksPlatform;Scopes;Scope;Use</PackageTags>
@@ -23,9 +23,7 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <LangVersion>latest</LangVersion>
-    <PackageReleaseNotes>Lowest supported version of .NET Framework is now 4.7.2.
-Platform.Singletons dependency updated from 0.0.7 to 0.1.0.
-Tests added.</PackageReleaseNotes>
+    <PackageReleaseNotes>Update target framework from net7 to net8.</PackageReleaseNotes>
     <Nullable>enable</Nullable>
   </PropertyGroup>
   
