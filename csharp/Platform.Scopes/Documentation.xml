@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<docs>
+  <members name="Scope">
+    <Scope>
+      <summary>
+        <para>
+        Represents a dependency injection scope that manages object dependencies and their lifecycles.
+        This scope provides mechanisms for including and excluding types, resolving dependencies automatically,
+        and maintaining clean separation of concerns in dependency management.
+        </para>
+        <para></para>
+      </summary>
+      <remarks>
+        <para>
+        The Scope class is the core component of the Platform.Scopes library, providing dependency injection
+        capabilities with automatic resolution, type inclusion/exclusion, and lifecycle management.
+        </para>
+        <para>
+        Key features:
+        - Automatic dependency resolution
+        - Type inclusion and exclusion mechanisms  
+        - Constructor injection support
+        - Singleton pattern support
+        - Automatic disposal of managed dependencies
+        </para>
+      </remarks>
+    </Scope>
+    <constructor>
+      <summary>
+        <para>
+        Initializes a new instance of the <see cref="Scope"/> class with specified auto-include and auto-explore settings.
+        </para>
+        <para></para>
+      </summary>
+      <param name="autoInclude">
+        <para>
+        A value indicating whether to automatically include types in the scope when they are used.
+        When true, using a type will automatically add it to the included types set.
+        </para>
+        <para></para>
+      </param>
+      <param name="autoExplore">
+        <para>
+        A value indicating whether to automatically explore and include assemblies when resolving types.
+        When true, the scope will automatically include assemblies containing required types during resolution.
+        </para>
+        <para></para>
+      </param>
+    </constructor>
+    <Use>
+      <summary>
+        <para>
+        Resolves and returns an instance of the specified type T, automatically managing its dependencies.
+        </para>
+        <para></para>
+      </summary>
+      <typeparam name="T">
+        <para>The type to resolve and return.</para>
+        <para></para>
+      </typeparam>
+      <returns>
+        <para>An instance of type T with all dependencies resolved.</para>
+        <para></para>
+      </returns>
+      <exception cref="InvalidOperationException">
+        Thrown when the type T is excluded from the scope or when dependency resolution fails.
+      </exception>
+      <remarks>
+        <para>
+        This method is the primary entry point for dependency resolution. It will:
+        1. Check if the type is excluded and throw an exception if so
+        2. Optionally auto-include the type if autoInclude is enabled
+        3. Attempt to resolve the type and all its dependencies
+        4. Add the resolved instance to the dependency stack
+        5. Return the fully constructed instance
+        </para>
+      </remarks>
+    </Use>
+  </members>
+</docs>

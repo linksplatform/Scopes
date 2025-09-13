@@ -14,12 +14,7 @@ using System.Runtime.CompilerServices;
 
 namespace Platform.Scopes
 {
-    /// <summary>
-    /// <para>
-    /// Represents the scope.
-    /// </para>
-    /// <para></para>
-    /// </summary>
+    /// <include file='Documentation.xml' path='docs/members[@name="Scope"]/Scope/*' />
     /// <seealso cref="DisposableBase"/>
     public class Scope : DisposableBase
     {
@@ -38,20 +33,7 @@ namespace Platform.Scopes
         private readonly HashSet<object> _blocked = new HashSet<object>();
         private readonly Dictionary<Type, object> _resolutions = new Dictionary<Type, object>();
 
-        /// <summary>
-        /// <para>
-        /// Initializes a new <see cref="Scope"/> instance.
-        /// </para>
-        /// <para></para>
-        /// </summary>
-        /// <param name="autoInclude">
-        /// <para>A auto include.</para>
-        /// <para></para>
-        /// </param>
-        /// <param name="autoExplore">
-        /// <para>A auto explore.</para>
-        /// <para></para>
-        /// </param>
+        /// <include file='Documentation.xml' path='docs/members[@name="Scope"]/constructor/*' />
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public Scope(bool autoInclude, bool autoExplore)
         {
@@ -247,6 +229,7 @@ namespace Platform.Scopes
 
         #region Use
 
+        /// <include file='Documentation.xml' path='docs/members[@name="Scope"]/Use/*' />
         /// <remarks>
         /// TODO: Use Default[T].Instance if the only constructor object has is parameterless.
         /// TODO: Think of interface chaining IDoubletLinks[T] (default) -> IDoubletLinks[T] (checker) -> IDoubletLinks[T] (synchronizer) (may be UseChain[IDoubletLinks[T], Types[DefaultLinks, DefaultLinksDependencyChecker, DefaultSynchronizedLinks]]
